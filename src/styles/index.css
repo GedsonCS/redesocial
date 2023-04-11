@@ -1,0 +1,227 @@
+.container{
+    font-family: 'Inter', sans-serif;
+    position: relative;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+
+    background-color: var(--color-grey-1);
+    color: var(--color-WhiteFixed);
+    
+    height: 4rem;
+    padding: 0 7%;
+
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.stack__usuario{
+    color: var(--color-grey-2);
+}
+.imgUsuario{
+    width: 52px;
+    height: 52px;
+    margin: 1rem 0.5rem 1rem 0;
+}
+.lado{
+    display: flex;
+    align-items: center;
+}
+.Titulo__post{
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+    padding: 0.5rem;
+}
+
+.texto__post{
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+    padding: 0.5rem;
+}
+
+.container__usuario{
+    padding: 0 7%;
+    margin: 0 0 30px 0;
+}
+.posicionar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.postar{
+    background-color: var(--color-grey-4);
+    color: var(--color-grey-3);
+    padding: 0.5rem;
+    border: solid var(--color-grey-4);
+    border-radius: 1px solid;
+    margin: 25px 0 0 0;
+  
+}
+
+.postar:hover{
+    background-color: var(--color-brand1);
+    color: var(--color-WhiteFixed);
+    border: solid var(--color-brand1);
+    transition: 0.5s;
+}
+
+.container__amizades{
+    padding: 0 7%;
+    margin: 0 0 30px 0;
+}
+
+.sugestoes{
+    margin: 0 0 20px 0;
+}
+
+.cardsugestao{
+    min-width: 178px;
+    min-height: 100px;
+    margin: 0 3rem 2rem 0;
+}
+
+.listasugestoes{
+    list-style: none;
+    display: flex;
+    overflow-x: scroll;
+}
+
+
+.divisor{
+    display: flex;
+    align-items: center;
+}
+
+.NomeUsuario{
+    font-size: 1rem;
+    font-weight: bold
+}
+
+.stacksugestao{
+    font-size: 0.8rem;
+    color: var(--color-grey-2);
+}
+
+.botaosugestao{
+    background-color: var(--color-brand1);
+    color: var(--color-WhiteFixed);
+    border: solid var(--color-brand1);
+    padding: 2px 3px;
+}
+
+.botaosugestao1{
+    background-color: var(--color-grey-4);
+    color: var(--color-grey-3);
+    border: solid var(--color-grey-4);
+    padding: 2px 3px;
+}
+
+.container__Posts{
+    padding: 0 7%;
+    margin: 0 0 20px 0;
+}
+
+.ajuste{
+    display: flex;
+    align-items: center;
+}
+
+.cardPost{
+    list-style: none;
+    margin: 0 0 1.5rem 0;
+}
+
+.titulopost{
+    margin: 0 0 1rem 0;
+}
+
+.descricaoPost{
+    color: var(--color-grey-2);
+    margin: 0 0 1rem 0;
+}
+
+.stakpost{
+    color: var(--color-grey-2);
+}
+
+.abrirPost{
+    background-color: var(--color-grey-1);
+    border: var(--color-grey-1) solid;
+    padding: 3px 4px;
+    color: var(--color-WhiteFixed);
+    margin: 0 1rem 0 0;
+}
+
+.fa-sharp{
+    color: red;
+}
+
+.modal__container{
+    margin: 10% 10%;
+    padding: 10px 15px;
+    border: none;
+}
+
+.modaldiv{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.fechaModal{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.title{
+    margin: 10px 0;
+}
+
+@media(min-width: 769px){
+    .principal{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+        
+
+    .modal__container{
+        margin: 10% 20%;
+    }
+
+   .container__usuario{
+    width: 65%;
+   }
+   
+   .container__Posts{
+    width: 65%;
+   }
+   .listasugestoes{
+    flex-direction: column;
+    overflow: none;
+   }
+   .container__amizades{
+    position: sticky;
+    top: 70px;
+    left: 65%;
+    width: 34%;
+    margin: 1rem 0 0 0;
+    padding: 0;
+   }
+
+   .cardsugestao{
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+
+}
+
+

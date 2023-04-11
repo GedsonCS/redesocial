@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <script src="./src/scripts/users.js" defer></script>
+    <script src="./src/styles/../scripts/sugestUsers.js" defer></script>
+    <script src="./src/scripts/posts.js" defer></script>
+    <script src="./src/scripts/index.js" defer></script>
+    <title> Rede Social</title>
+</head>
+<body class="container">
+    <nav class="cabecalho">
+        <img src="./src/assets/img/logo.svg" alt="logo">
+        <p class="sair">Sair</p>
+    </nav>
+
+    <main class="principal">
+        <header class="container__usuario">
+           <div class="lado">
+                <img class="imgUsuario" src="./src/assets/img/user1.svg" alt="imagemusuário">
+                <div>
+                    <h3>Samuel Leão</h3>
+                    <p class="stack__usuario">Front end Engineer</p>
+                </div>
+           </div>
+            <input placeholder="Digitar Título do Post" class="Titulo__post" type="text">
+            <textarea placeholder="Digitar Descrição do Post" class="texto__post" name="" id="" cols="30" rows="5"></textarea>
+            <div class="posicionar">
+                <button class="postar">Postar</button>
+            </div>
+        </header>
+
+        <aside class="container__amizades">
+            <h3 class="sugestoes">Sugestões para você seguir</h3>
+            
+            <ul class="listasugestoes">
+                <li class="cardsugestao">
+                    <div class="divisor">
+                        <img class="imgUsuario" src="./src/assets/img/user3.svg" alt="">
+                        <div>
+                            <p class="NomeUsuario">Carlos Lima</p>
+                            <p class="stacksugestao">UX e UI Designer</p>
+                        </div>
+                    </div>
+                    <button class="botaosugestao">Seguindo</button>
+                </li>
+
+                <li class="cardsugestao">
+                    <div class="divisor">
+                        <img class="imgUsuario" src="./src/assets/img/user6.svg" alt="">
+                        <div>
+                            <p class="NomeUsuario">Larissa Camargo</p>
+                            <p class="stacksugestao">UI Developer</p>
+                        </div>
+                    </div>
+                    <button class="botaosugestao1">Seguir</button>
+                </li>
+
+                <li class="cardsugestao">
+                    <div class="divisor">
+                        <img class="imgUsuario" src="./src/assets/img/user7.svg" alt="">
+                        <div>
+                            <p class="NomeUsuario">Filipe Gutierry</p>
+                            <p class="stacksugestao">Full Stack Developer</p>
+                        </div>
+                    </div>
+                    <button class="botaosugestao1">Seguir</button>
+                </li>
+
+
+            </ul>
+        </aside>
+
+        <article class="container__Posts">
+            <h2 class="tituloPosts">Posts</h2>
+           <ul>
+                <li class="cardPost">
+                
+                    <div class="ajuste">
+                        <img class="imgUsuario" src="./src/assets/img/user2.svg" alt="imagemusuário">
+                        <div>
+                            <h3>Samuel Persuhn</h3>
+                            <p class="stakpost">Front end Engineer</p>
+                        </div>
+                    </div>
+
+                    <h2 class="titulopost">Empresa de Tecnologia da Informação abre vagas para programa de estágio</h2>
+                    <p class="descricaoPost">A Framework Digital, empresa mineira especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 08 e 28 de agosto.</p>
+                    <div class="">
+                        <button data-id="2" class ="abrirPost">Abrir Post</button>
+                        <span ><i class="fa-sharp fa-solid fa-heart"></i>25</span>
+                    </div>
+                </li>
+
+                <li class="cardPost">
+                
+                    <div class="ajuste">
+                        <img class="imgUsuario" src="./src/assets/img/user4.svg" alt="imagemusuário">
+                        <div>
+                            <h3>Carla Maria</h3>
+                            <p class="stakpost">Back end Engineer</p>
+                        </div>
+                    </div>
+
+                    <h2 class="titulopost">Programa de estágio abre vagas em Segurança da Informação com regime remoto</h2>
+                    <p class="descricaoPost">Em Segurança da Informação, as vagas são destinadas às áreas de Security Operations Center (SOC), Administração de Dispositivos de Segurança (ADS), Resposta a Incidentes (RI), Segurança e Privacidade e Consultoria Técnica.</p>
+                    <div class="">
+                        <button data-id="4" class="abrirPost">Abrir Post</button>
+                        <span><i class="fa-regular fa-heart"></i>18</span>
+                    </div>
+                </li>
+
+                <li class="cardPost">
+                
+                    <div class="ajuste">
+                        <img class="imgUsuario" src="./src/assets/img/user5.svg" alt="imagemusuário">
+                        <div>
+                            <h3>Júlia Martins</h3>
+                            <p class="stakpost">Devop's</p>
+                        </div>
+                    </div>
+                    
+
+                    <h2 class="titulopost">O que é programação orientada a objetos e programação funcional</h2>
+                    <p class="descricaoPost">A Programação Funcional é uma orientação focada na programação declarativa.</p>
+                    <div class="">
+                        <button data-id="5" class="abrirPost">Abrir Post</button>
+                        <span ><i class="fa-regular fa-heart"></i>8</span>
+                    </div>
+                </li>
+
+           </ul>
+
+
+        </article>
+
+        <dialog class="modal__container">
+           
+        </dialog>
+    </main>
+    
+    <script src="https://kit.fontawesome.com/824b6b0197.js" crossorigin="anonymous"></script>
+</body>
+</html>
